@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="loadPokemonCat()">
+    <main>
+        
+            <nav class="nav">
+            <ul class="nav__ul">
+                <li class="nav__item nav__item--icon">
+                    <img class="nav__item--logo" src="./images/Pokeicons.png" alt="icono">
+                    <span>Pokedex</span>
+                </li>
+                <li class="nav__item">
+                    <section class="nav__item-sec">
+                        <svg  class="nav__item-svg" viewBox="0 0 24 24">
+                            <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+                        </svg>                    
+                        <input id="nav-input" class="nav__item-input" type="search" placeholder="Search" >
+                    </section>
+                </li>
+                <li class="nav__item">Login</li>
+                <li class="nav__item nav__item--Creator">Fabian Gonzalez</li>
+            </ul>
+            <ul id="second-menu" class="nav__ul nav__ul--second">
+                 <li class="nav__item nav__item--options nav__item--options-Main" onclick="createCardsCunstoms('All')">All</li>
+            </ul>
+        </nav>            
+
+        <section id="card">
+
+        </section>
+
+    </main>
+    <script src="./scripts.js"></script>
+</body>
+</html>
